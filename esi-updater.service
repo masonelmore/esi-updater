@@ -1,0 +1,9 @@
+[Unit]
+Description=Update ESI client repository
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=mason
+Type=oneshot
+ExecStart=/home/mason/esi-updater/update.sh /home/mason/esi git@github.com:masonelmore/esi.git
