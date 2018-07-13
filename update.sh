@@ -5,7 +5,7 @@ SCRIPT_PATH=/home/mason/esi-updater
 LOCAL_REPO=$1
 REMOTE_REPO=$2
 
-ESI_SPEC_URL="https://esi.evetech.net/latest/swagger.json"
+ESI_SPEC_URL="https://esi.evetech.net/_latest/swagger.json"
 SWAGGER_CODEGEN_CLI=${SCRIPT_PATH}/swagger-codegen-cli.jar
 
 if [ -z $1 ] || [ -z $2 ]; then
